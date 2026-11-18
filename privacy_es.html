@@ -32,21 +32,23 @@
   <p class="meta">
     Aplicación: <strong>Pixel Fake</strong> &nbsp;·&nbsp;
     Desarrollada por: <strong>Cervena Software</strong> &nbsp;·&nbsp;
-    Última actualización: <strong>Junio 2026</strong>
+    Última actualización: <strong>Noviembre 2026</strong>
   </p>
 
   <div class="highlight">
-    <strong>Resumen en lenguaje simple:</strong> Pixel Fake analiza imágenes para detectar si fueron
+    <strong>Resumen en lenguaje simple:</strong> Pixel Fake analiza imágenes para estimar si fueron
     generadas por IA. Las imágenes que analizás <strong>nunca se almacenan en nuestros servidores</strong>.
     Solo recopilamos los datos mínimos necesarios para que la app funcione. Si elegís no compartir datos
-    de uso, la app funciona exactamente igual.
+    de uso, la app funciona exactamente igual. Podés
+    <a href="delete_es.html">eliminar tu cuenta y tus datos</a> cuando quieras.
   </div>
 
   <h2>1. Quiénes somos</h2>
   <p>
-    Pixel Fake es desarrollada y operada por <strong>Cervena Software</strong>, con domicilio en la
-    Ciudad Autónoma de Buenos Aires, República Argentina. Para cualquier consulta sobre privacidad,
-    podés escribirnos a
+    Pixel Fake es desarrollada y operada por <strong>Flavio Adrián Agostinis</strong>, persona humana con domicilio en
+    Bustamante y Guevara 1165, Depto. 3, (1686) Hurlingham, Provincia de Buenos Aires, República Argentina, que actúa bajo el nombre comercial
+    <strong>Cervena Software</strong> (en adelante, “Cervena Software” o “nosotros”) y es responsable
+    del tratamiento de tus datos. Para cualquier consulta sobre privacidad, podés escribirnos a
     <a href="mailto:cervenasoftware@gmail.com">cervenasoftware@gmail.com</a>.
   </p>
 
@@ -54,164 +56,199 @@
 
   <p><strong>2.1 Datos de cuenta</strong></p>
   <p>
-    Para crear tu cuenta necesitamos tu dirección de correo electrónico y una contraseña.
-    Estos datos se almacenan de forma segura en Firebase Authentication (Google LLC) y se usan
-    exclusivamente para identificarte y proteger tu cuenta.
+    Para crear tu cuenta necesitamos tu dirección de correo electrónico y una contraseña. Si elegís
+    <strong>Acceder con Google</strong>, en lugar de una contraseña Google nos comparte tu dirección de
+    correo y los datos básicos de tu perfil de Google (nombre y foto, si los tenés configurados). Estos
+    datos se almacenan en Firebase Authentication (Google LLC). La contraseña nunca se guarda en texto
+    plano. Los usamos exclusivamente para identificarte y proteger tu cuenta.
   </p>
 
   <p><strong>2.2 Datos de suscripción</strong></p>
   <p>
-    La gestión de suscripciones y pagos se realiza a través de Apple App Store, Google Play
-    o RevenueCat Inc. Nosotros recibimos confirmación del estado de tu suscripción (activa,
-    cancelada, etc.) pero <strong>nunca tenemos acceso a tu información de tarjeta de crédito
-    ni datos de pago</strong>. Esos datos son manejados exclusivamente por Apple, Google
-    o RevenueCat según corresponda.
+    La gestión de suscripciones y pagos se realiza a través de Google Play o Apple App Store, con la
+    ayuda de RevenueCat Inc. Para asociar tu compra a tu cuenta, RevenueCat recibe un identificador técnico
+    (no tu email). Nosotros recibimos la confirmación del estado de tu suscripción (activa,
+    cancelada, vencida, etc.), pero <strong>nunca tenemos acceso a tu tarjeta de crédito ni a tus
+    datos de pago</strong>: esos datos los manejan exclusivamente Google o Apple.
   </p>
 
   <p><strong>2.3 Imágenes analizadas</strong></p>
   <p>
-    Las imágenes que enviás para análisis se transmiten de forma encriptada (HTTPS) a nuestro
-    backend, donde son procesadas por el servicio Sightengine
-    (<a href="https://sightengine.com" target="_blank" rel="noopener">sightengine.com</a>).
-    <strong>Las imágenes originales no se almacenan en ningún servidor.</strong>
-    Guardamos únicamente un código hash criptográfico (SHA-256) del resultado del análisis en
-    caché por hasta 30 días, con el fin de evitar procesar la misma imagen dos veces y
-    optimizar el uso de la app. Este hash no permite reconstruir la imagen original.
+    Las imágenes que enviás para análisis se transmiten cifradas (HTTPS) a nuestro servidor, que las
+    envía al servicio Sightengine
+    (<a href="https://sightengine.com" target="_blank" rel="noopener">sightengine.com</a>) para
+    clasificarlas. <strong>Las imágenes originales no se almacenan en nuestros servidores.</strong>
+  </p>
+  <p>
+    Lo único que guardamos es una huella digital criptográfica (SHA-256) de la imagen junto con el
+    resultado del análisis, en una caché que no está vinculada a tu cuenta, durante 30 días. Sirve
+    para no volver a analizar la misma imagen. A partir de esa huella no se puede reconstruir la
+    imagen.
   </p>
 
-  <p><strong>2.4 Historial de análisis</strong></p>
+  <p><strong>2.4 Historial de análisis (en tu dispositivo)</strong></p>
   <p>
-    El historial de tus análisis (puntuación, fecha, miniatura reducida) se guarda
-    <strong>localmente en tu dispositivo</strong> usando almacenamiento seguro. No sincronizamos
-    este historial con ningún servidor. Si desinstalás la app o eliminás tu cuenta, el historial
-    local se borra definitivamente.
+    Tu historial de análisis (puntaje, fecha y, si la opción de miniaturas está activada, una
+    miniatura reducida) se guarda <strong>solo en tu dispositivo</strong>. No lo sincronizamos con
+    ningún servidor. Se borra cuando lo eliminás desde la app, cuando cerrás sesión, cuando eliminás
+    tu cuenta desde la app o cuando desinstalás la app.
   </p>
 
-  <p><strong>2.5 Datos de uso y diagnóstico (opt-in)</strong></p>
+  <p><strong>2.5 Datos de uso y diagnóstico (opcionales)</strong></p>
   <p>
-    Solo si vos lo aceptás explícitamente durante el onboarding o en Configuración, recopilamos
-    datos anónimos de uso (por ejemplo, qué funciones usás, cuántos análisis realizás por sesión)
-    mediante Firebase Analytics, y datos de diagnóstico de errores mediante Firebase Crashlytics.
-    Estos datos son completamente anónimos y se usan para mejorar la app.
-    <strong>Si no aceptás, no recopilamos ningún dato de uso ni diagnóstico.</strong>
-    Podés cambiar esta preferencia en cualquier momento desde Configuración → Privacidad.
+    Solo si lo aceptás explícitamente durante el onboarding o en Configuración, recopilamos datos de uso
+    (por ejemplo, qué funciones usás o cuántos análisis hacés) mediante Google Analytics for Firebase,
+    y datos de diagnóstico de errores mediante Firebase Crashlytics. Estos datos se asocian a un
+    identificador aleatorio de instalación, <strong>no a tu cuenta ni a tu email</strong>, y no
+    incluyen tus imágenes. Los usamos solo para mejorar la app.
+    <strong>Si no aceptás, no recopilamos ningún dato de uso ni de diagnóstico.</strong>
+    Podés cambiar esta preferencia en cualquier momento desde Configuración.
   </p>
 
-  <p><strong>2.6 Datos técnicos básicos</strong></p>
+  <p><strong>2.6 Datos técnicos de funcionamiento</strong></p>
   <p>
-    Para el correcto funcionamiento de la app, nuestro backend registra datos mínimos
-    de operación como: identificador de usuario (anónimo, generado por Firebase), cantidad de
-    análisis realizados en el mes, y marcas de tiempo necesarias para el control de cuota y
-    rate limiting. Estos datos no incluyen información personal identificable más allá del
-    email de tu cuenta.
+    Para que el servicio funcione, nuestro servidor guarda un registro de tu cuenta con tu identificador
+    de usuario (generado por Firebase), tu email, el estado de la prueba gratuita y de la suscripción
+    con sus fechas, la cantidad de análisis del período y las fechas de alta y de aceptación de los
+    términos. Además, registra marcas de tiempo de tus solicitudes de la última hora para limitar su
+    frecuencia, y genera registros técnicos (que pueden incluir tu identificador de usuario, la huella
+    de la imagen y el resultado) para seguridad y diagnóstico de errores.
   </p>
 
   <h2>3. Cómo usamos tus datos</h2>
   <ul>
     <li>Proveer y mantener el servicio de detección de imágenes generadas por IA.</li>
-    <li>Gestionar tu cuenta, suscripción y período de prueba gratuito.</li>
-    <li>Controlar el uso justo del servicio (límite mensual de análisis y rate limiting).</li>
+    <li>Gestionar tu cuenta, tu suscripción y tu período de prueba gratuito.</li>
+    <li>Controlar el uso justo del servicio (límite mensual de análisis y límite de frecuencia).</li>
+    <li>Proteger el servicio contra el fraude y el abuso.</li>
     <li>Responder a tus consultas de soporte.</li>
-    <li>Mejorar la app mediante datos anónimos de uso, solo si diste tu consentimiento.</li>
+    <li>Mejorar la app mediante datos de uso, solo si diste tu consentimiento.</li>
   </ul>
   <p>
     <strong>No vendemos, alquilamos ni cedemos tus datos personales a terceros</strong>
-    con fines comerciales o publicitarios.
+    con fines comerciales o publicitarios. La app no muestra publicidad.
   </p>
 
-  <h2>4. Terceros que acceden a datos</h2>
-  <p>Para operar el servicio utilizamos los siguientes proveedores de confianza:</p>
+  <h2>4. Proveedores que tratan datos por nuestra cuenta</h2>
+  <p>Para operar el servicio utilizamos los siguientes proveedores:</p>
   <ul>
     <li>
-      <strong>Google Firebase</strong> (Firebase Authentication, Firestore, Cloud Functions,
-      Analytics, Crashlytics) — almacenamiento de cuenta, backend y, si aceptás, analytics y
-      diagnóstico. Política de privacidad:
+      <strong>Google</strong> (Firebase Authentication, Firestore, Cloud Functions, App Check,
+      Analytics, Crashlytics y Acceder con Google): cuentas, servidor, protección del servicio y, si
+      aceptás, datos de uso y diagnóstico. Política de privacidad:
       <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">policies.google.com/privacy</a>
     </li>
     <li>
-      <strong>Sightengine</strong> — servicio de análisis de imágenes por IA. Las imágenes se
-      envían a Sightengine para su clasificación y no son retenidas por este servicio más allá
-      del procesamiento inmediato. Política de privacidad:
-      <a href="https://sightengine.com/privacy" target="_blank" rel="noopener">sightengine.com/privacy</a>
+      <strong>Sightengine</strong>: análisis de imágenes. Recibe la imagen solo para clasificarla y,
+      según su política, la elimina una vez procesada. Política de privacidad:
+      <a href="https://sightengine.com/policies/privacy" target="_blank" rel="noopener">sightengine.com/policies/privacy</a>
     </li>
     <li>
-      <strong>RevenueCat</strong> — gestión de suscripciones. Política de privacidad:
+      <strong>RevenueCat</strong>: gestión de suscripciones. Política de privacidad:
       <a href="https://www.revenuecat.com/privacy" target="_blank" rel="noopener">revenuecat.com/privacy</a>
     </li>
     <li>
-      <strong>Apple Inc.</strong> / <strong>Google LLC</strong> — procesamiento de pagos y
-      distribución de la app. Sus políticas de privacidad se aplican a las transacciones
-      realizadas a través de sus respectivas tiendas.
+      <strong>Google LLC</strong> (Google Play) / <strong>Apple Inc.</strong> (App Store):
+      procesamiento de pagos y distribución de la app. Sus políticas de privacidad se aplican a las
+      transacciones realizadas en sus tiendas.
     </li>
   </ul>
+  <p>
+    Estos proveedores pueden almacenar y procesar datos fuera de la Argentina (por ejemplo, en Estados
+    Unidos o en la Unión Europea). Trabajamos solo con proveedores que aplican medidas de seguridad y
+    compromisos contractuales de protección de datos.
+  </p>
 
   <h2>5. Retención de datos</h2>
   <ul>
-    <li>Datos de cuenta: mientras tu cuenta esté activa.</li>
-    <li>Caché de análisis (hash): hasta 30 días desde el último acceso.</li>
-    <li>Historial local: hasta que lo eliminés manualmente o desinstalés la app.</li>
-    <li>Datos de suscripción: según los plazos legales y comerciales aplicables.</li>
-    <li>
-      Al eliminar tu cuenta desde la app, todos tus datos en nuestros servidores se borran
-      en un plazo máximo de 30 días.
-    </li>
+    <li>Datos de cuenta y registro de cuenta: mientras tu cuenta esté activa. Al eliminarla, se borran
+      en el momento de nuestros sistemas; las copias de seguridad del sistema de cuentas de nuestro
+      proveedor (Firebase Authentication) se eliminan en un plazo de hasta 180 días.</li>
+    <li>Caché de análisis (huella y resultado, sin vínculo con tu cuenta): 30 días desde que se generó;
+      después se elimina automáticamente.</li>
+    <li>Registros técnicos del servidor: 30 días.</li>
+    <li>Registros de control de frecuencia: la última hora; se borran al eliminar la cuenta.</li>
+    <li>Historial local: hasta que lo borres, cierres sesión, elimines la cuenta desde la app o
+      desinstales la app.</li>
+    <li>Datos de diagnóstico (Crashlytics), si los aceptaste: 90 días.</li>
+    <li>Datos de uso (Analytics), si los aceptaste: hasta 14 meses.</li>
+    <li>Datos de compras: Google Play y App Store los conservan según sus propias políticas.
+      RevenueCat conserva el historial de compras hasta que pidas su eliminación.</li>
   </ul>
 
-  <h2>6. Tus derechos</h2>
+  <h2 id="eliminar-cuenta">6. Eliminación de tu cuenta</h2>
+  <div class="highlight">
+    Podés eliminar tu cuenta en cualquier momento desde la app (<strong>Configuración → Mi cuenta → Eliminar mi
+    cuenta</strong>), o sin tener la app instalada, escribiéndonos desde el email de tu cuenta.
+    Explicamos los pasos, qué se borra y qué se conserva en
+    <a href="delete_es.html"><strong>Eliminar tu cuenta de Pixel Fake</strong></a>.
+    Eliminar la cuenta no cancela tu suscripción: cancelala antes desde la tienda.
+  </div>
+
+  <h2>7. Tus derechos</h2>
   <p>
-    De acuerdo con la Ley N° 25.326 de Protección de los Datos Personales (Argentina) y
-    principios del RGPD (Unión Europea), tenés derecho a:
+    De acuerdo con la Ley N° 25.326 de Protección de los Datos Personales (Argentina) y, cuando
+    corresponda, el Reglamento General de Protección de Datos (RGPD) de la Unión Europea, tenés
+    derecho a:
   </p>
   <ul>
     <li><strong>Acceder</strong> a los datos personales que tenemos sobre vos.</li>
     <li><strong>Rectificar</strong> datos incorrectos o incompletos.</li>
-    <li><strong>Eliminar</strong> tu cuenta y todos tus datos (botón disponible en Configuración → Mi cuenta).</li>
-    <li><strong>Exportar</strong> tus datos en formato JSON (disponible en Configuración → Mi cuenta).</li>
-    <li><strong>Retirar el consentimiento</strong> de analytics en cualquier momento desde Configuración → Privacidad.</li>
-    <li><strong>Oponerte</strong> al procesamiento de tus datos contactándonos.</li>
+    <li><strong>Suprimir</strong> tu cuenta y tus datos (ver la <a href="#eliminar-cuenta">sección 6</a>).</li>
+    <li><strong>Exportar</strong> los datos de tu cuenta en formato JSON desde Configuración → Mi cuenta.</li>
+    <li><strong>Retirar tu consentimiento</strong> para los datos de uso y diagnóstico en cualquier
+      momento desde Configuración.</li>
+    <li><strong>Oponerte</strong> al tratamiento de tus datos escribiéndonos.</li>
   </ul>
   <p>
     Para ejercer cualquiera de estos derechos, escribinos a
     <a href="mailto:cervenasoftware@gmail.com">cervenasoftware@gmail.com</a>.
   </p>
-
-  <h2>7. Seguridad</h2>
   <p>
-    Implementamos medidas técnicas y organizativas para proteger tus datos:
-    todas las comunicaciones usan HTTPS/TLS; las claves de API viven exclusivamente
-    en el backend (nunca en la app); el acceso a los datos está protegido por
-    Firebase Authentication y reglas de seguridad de Firestore; usamos Firebase App Check
-    para verificar que las solicitudes provienen de versiones legítimas de la app.
+    LA AGENCIA DE ACCESO A LA INFORMACIÓN PÚBLICA, en su carácter de Órgano de Control de la Ley
+    N° 25.326, tiene la atribución de atender las denuncias y reclamos que interpongan quienes
+    resulten afectados en sus derechos por incumplimiento de las normas vigentes en materia de
+    protección de datos personales.
   </p>
 
-  <h2>8. Privacidad de menores</h2>
+  <h2>8. Seguridad</h2>
+  <p>
+    Implementamos medidas técnicas y organizativas para proteger tus datos: todas las comunicaciones
+    usan HTTPS/TLS; las claves secretas de los servicios (por ejemplo, la de Sightengine) viven solo
+    en nuestro servidor, nunca en la app; el acceso a los datos está protegido por Firebase
+    Authentication y por reglas de seguridad de Firestore; y usamos Firebase App Check para verificar
+    que las solicitudes provengan de la app legítima.
+  </p>
+
+  <h2>9. Privacidad de menores</h2>
   <p>
     Pixel Fake no está dirigida a menores de 13 años. No recopilamos intencionalmente datos
-    personales de niños menores de 13 años. Si tenés conocimiento de que un menor nos ha
-    proporcionado datos personales, contactanos para eliminarlos.
+    personales de menores de 13 años. Si sabés que un menor nos proporcionó datos personales,
+    contactanos para eliminarlos.
   </p>
 
-  <h2>9. Cambios a esta política</h2>
+  <h2>10. Cambios a esta política</h2>
   <p>
-    Podemos actualizar esta Política de Privacidad periódicamente. Te notificaremos de cambios
-    significativos mediante un aviso en la app o por email. La fecha de la última actualización
-    siempre está visible al inicio de este documento.
+    Podemos actualizar esta Política de Privacidad. La fecha de la última actualización siempre está
+    visible al inicio de este documento. Si los cambios son significativos, te avisaremos dentro de la
+    app o por email.
   </p>
 
-  <h2>10. Contacto</h2>
+  <h2>11. Contacto</h2>
   <p>
     Para consultas, ejercicio de derechos o cualquier inquietud sobre privacidad:
   </p>
   <ul>
     <li>Email: <a href="mailto:cervenasoftware@gmail.com">cervenasoftware@gmail.com</a></li>
-    <li>Empresa: Cervena Software</li>
-    <li>Domicilio: Ciudad Autónoma de Buenos Aires, República Argentina</li>
+    <li>Responsable: Flavio Adrián Agostinis (Cervena Software)</li>
+    <li>Domicilio: Bustamante y Guevara 1165, Depto. 3, (1686) Hurlingham, Provincia de Buenos Aires, República Argentina</li>
   </ul>
 
   <footer>
     &copy; 2026 Cervena Software · Pixel Fake ·
     <a href="terms_es.html">Términos de Uso</a> ·
-    <a href="privacy_en.html">Privacy Policy (English)</a>
+    <a href="delete_es.html">Eliminar tu cuenta</a> ·
+    <a href="privacy_en.html" hreflang="en">Privacy Policy (English)</a>
   </footer>
 
 </body>
